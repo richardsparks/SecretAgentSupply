@@ -79,6 +79,10 @@ header img {
   color: white;
 }
 
+.nav-main span {
+  display: none;
+}
+
 main {
   margin-top: 40px;
 }
@@ -109,7 +113,8 @@ main .product div {
 }
 
 main .product img {
-  width: 300px;
+  margin: 50px;
+  width: 200px;
 }
 
 /* info  */
@@ -146,4 +151,91 @@ footer {
   background: black;
   color: white;
   font-size: 18px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .banner h1 {
+    font-size: 1.6em;
+    line-height: 1.2em;
+  }
+
+  .banner h4 {
+    font-size: 0.8em;
+  }
+
+  .nav-main ul {
+    display: none;
+  }
+
+  .nav-main span {
+      display: flex;
+      margin: 1rem 0;
+      width: 100%;
+      justify-content: center;
+      color: white;
+  }
+
+  main .product.glasses {
+    display: none;
+  }
+
+  main .product img {
+    margin: 100px;
+    width: 200px;
+  }
+
+}
+
+@media only screen and (max-width: 470px) {
+  .banner h1 {
+    font-size: 1em;
+  }
+
+  .banner h4 {
+    font-size: 0.8em;
+  }
+
+  .banner .box {
+    margin-top: 18em;
+    min-height: 100px;
+    width: 100%;
+  }
+
+  main .container {
+    justify-content: space-around;
+  }
+
+  main .product.watch {
+    display: none;
+  }
+
+  main .product img {
+    margin: 30px;
+    width: 300px;
+  }
+
+  .info .container {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .info article {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .info h2 {
+    width: 100%;
+    padding: 1em;
+  }
+
+  .info span {
+    margin: 20px 0 0 16px;
+    display: block;
+  }
+
+  footer .container {
+    justify-content: center;
+  }
+
 }
